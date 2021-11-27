@@ -14,7 +14,10 @@ public class Gerente {
         this.jogador2 = new Jogador2("Virtual");
     }
     
-    void faca(){
+    void iniciarRodada(){
+        this.umaI.apresentar();
+        this.tabuleiro.mostrarTabuleiro();
+        
         
     }
     

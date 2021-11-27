@@ -8,6 +8,24 @@ public class Tabuleiro {
     }
     
     void mostrarTabuleiro(){
+        for(int linha=0; linha<3; linha++){
+            for(int coluna=0; coluna <3; coluna++){
+                if(tabuleiro[linha][coluna]==-1){
+                    return;
+                }
+                if(tabuleiro[linha][coluna]==1){
+                    System.out.println("O");
+                }
+                if(tabuleiro[linha][coluna]==0){
+                    System.out.println(" ");
+                }
+                if(tabuleiro[linha][coluna]==-1){
+                    System.out.println(" | ");
+                    System.out.println(" + ");
+                }
+                System.out.println();
+            }
+        }
         
     }
     
