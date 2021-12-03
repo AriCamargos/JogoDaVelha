@@ -1,9 +1,10 @@
 package jogodavelha;
 
 public class Tabuleiro {
-    public String[][] v  = {{"1","2","3"},
+    public String[][] v  = {{"7","8","9"},
                             {"4","5","6"},
-                            {"7","8","9"}};
+                            {"1","2","3"},
+                            {}};
     public int proximo;
     public boolean terminou;
     
@@ -27,11 +28,11 @@ public class Tabuleiro {
     
     //Informando as posições
     public void executaJogada(String jogador, String posicao){
-        if(posicao.equals("1"))
+        if(posicao.equals("7"))
             v[0][0] = jogador;
-        if(posicao.equals("2"))
+        if(posicao.equals("8"))
             v[0][1] = jogador;
-        if(posicao.equals("3"))
+        if(posicao.equals("9"))
             v[0][2] = jogador;
         if(posicao.equals("4"))
             v[1][0] = jogador;
@@ -39,11 +40,11 @@ public class Tabuleiro {
             v[1][1] = jogador;
         if(posicao.equals("6"))
             v[1][2] = jogador;
-        if(posicao.equals("7"))
+        if(posicao.equals("1"))
             v[2][0] = jogador;
-        if(posicao.equals("8"))
+        if(posicao.equals("2"))
             v[2][1] = jogador;
-        if(posicao.equals("9"))
+        if(posicao.equals("3"))
             v[2][2] = jogador;
     }
     
